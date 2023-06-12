@@ -12,6 +12,7 @@ jobs:
         run: python3 ./Hello.py
   
   myjob2:
+    needs: [myjob1] #needs keyword makes this sequential
     runs-on: ubuntu-latest
     steps:
       - name: Checkout #https://github.com/marketplace/actions/checkout

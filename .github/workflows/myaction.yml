@@ -1,0 +1,10 @@
+name: First_Workflow #Name of the WF, free style
+on: workflow_dispatch #Event or trigger at which this WF should run, workflow_dispatch lets user to start a trigger manually
+jobs:
+  first_job: #Name of job, free style
+    runs-on: ubuntu-latest #https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+    steps:
+      - name: print_hello #Free style name
+        run: echo "Hello RE" #run can take shell commands or scripts
+      - name: say_bye
+        run: echo "Bye! Bye RE!" 

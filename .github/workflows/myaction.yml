@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest #https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
     steps:
       - name: print_hello #Free style name
-        run: echo "Hello RE" #run can take shell commands or scripts
+        run: |
+          echo "Hello RE" #run can take shell commands or scripts
+          echo "HOw are you?"
       - name: say_bye
         run: echo "Bye! Bye RE!" 

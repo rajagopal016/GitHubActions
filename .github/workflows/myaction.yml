@@ -1,5 +1,5 @@
 name: First_Workflow #Name of the WF, free style
-on: workflow_dispatch #Event or trigger at which this WF should run, workflow_dispatch lets user to start a trigger manually
+on: workflow_dispatch #Event or trigger at which this WF should run, workflow_dispatch lets user to start a trigger manually. https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 jobs:
   first_job: #Name of job, free style
     runs-on: ubuntu-latest #https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
